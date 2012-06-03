@@ -63,6 +63,9 @@
 ;; Enable flyspell while in text-mode
 (add-hook 'text-mode-hook 'flyspell-mode)
 
+;; Disable the annoying "follow symbolic link" for vc-git
+(setq vc-follow-symlinks t)
+
 ;; Open Rakefile in ruby-mode
 (setq auto-mode-alist (cons '("Rakefile" . ruby-mode) auto-mode-alist))
 
