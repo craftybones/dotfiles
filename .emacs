@@ -97,5 +97,5 @@
 
 (add-to-list 'load-path "~/.emacs.d/")
 '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 136 :width normal :foundry "unknown" :family "Monaco"))))
+(require 'clojure-mode)
 
-(require 'package)
