@@ -37,5 +37,5 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 # Added by oh-my-vim
-export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin:~/mongo/bin
 
