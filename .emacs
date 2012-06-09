@@ -87,6 +87,9 @@
 (autoload 'js2-mode' "js2" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
+;; Set a proper tab width for js2-mode
+(setq js-indent-level 2)
+
 ;; Add ELPA as a source
 (setq package-archives '(("ELPA" . "http://tromey.com/elpa/") 
 			 ("gnu" . "http://elpa.gnu.org/packages/")
