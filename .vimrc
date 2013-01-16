@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
@@ -21,7 +23,12 @@ set history=50    " keep 50 lines of command line history
 set ruler            " show the cursor position all the time
 set showcmd          " display incomplete commands
 set incsearch        " do incremental searching
-set wildmenu
+set wildmenu         " Add wildcards for completion while loading files
+set modeline         " Set modeline so that you can see some info 
+set ls=2             " set two lines for info
+
+" NerdTREEToggle
+map <F7> :NERDTreeToggle<CR>
 
 set expandtab
 map DS :%s/\s\+$// <CR>
