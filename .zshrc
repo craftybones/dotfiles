@@ -39,3 +39,5 @@ source $ZSH/oh-my-zsh.sh
 # Added by oh-my-vim
 export PATH=$PATH:~/bin:~/mongo/bin
 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
