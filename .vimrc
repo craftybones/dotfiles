@@ -30,6 +30,9 @@ set ls=2             " set two lines for info
 " NerdTREEToggle
 map <F7> :NERDTreeToggle<CR>
 
+" Grep stuff
+map <C-G> :vimgrep /<C-R><C-W>/j *<CR>:cope<CR>
+
 set expandtab
 map DS :%s/\s\+$// <CR>
 
