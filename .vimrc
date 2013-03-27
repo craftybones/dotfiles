@@ -29,6 +29,9 @@ set ls=2             " set two lines for info
 
 " NerdTREEToggle
 map <F7> :NERDTreeToggle<CR>
+map <F8> :FufBuffer<CR>
+map <F9> :FufFile<CR>
+map <M> ma
 
 " Grep stuff
 map <C-G> :vimgrep /<C-R><C-W>/j *<CR>:cope<CR>
