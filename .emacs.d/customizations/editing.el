@@ -73,3 +73,5 @@
 
 ;; Bind RET to newline and indent globally
 (define-key global-map (kbd "RET") 'newline-and-indent)
+
+(add-hook 'after-init-hook 'global-company-mode)
