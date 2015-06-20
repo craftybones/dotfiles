@@ -70,6 +70,7 @@
     (quit nil)))
 
 (setq electric-indent-mode nil)
+(setq linum-format "%3d ")
 
 ;; Bind RET to newline and indent globally
 (define-key global-map (kbd "RET") 'newline-and-indent)
