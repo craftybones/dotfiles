@@ -44,6 +44,12 @@
 (setq auto-save-default nil)
 
 
+(defun kill-line-from-beginning ()
+  "Kill the line from the beginning no matter where you are on the line"
+  (interactive)
+  (delete-region (line-beginning-position) (line-end-position)))
+(global-set-key (kbd "C-M-l") 'kill-line-from-beginning)
+
 ;; comments
 (defun toggle-comment-on-line ()
   "comment or uncomment current line"

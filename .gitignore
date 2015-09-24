@@ -8,3 +8,4 @@
 .emacs.d/.smex-items
 .emacs.d/auto-save-list
 .emacs.d/elpa/company-20150605.253/
+.emacs.d/projectile.cache
