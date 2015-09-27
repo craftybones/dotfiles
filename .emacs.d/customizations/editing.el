@@ -46,6 +46,26 @@
 (when (fboundp 'windmove-default-keybindings)
     (windmove-default-keybindings))
 
+(defun open-line-beneath (arg)
+  (interactive "p")
+  (end-of-line)
+  (open-line arg)
+  (next-line 1)
+  (when newline-and-indent
+    (indent-according-to-mode)))
+
+(global-set-key (kbd "C-o") 'open-line-beneath)
+
+(defun open-line-above (arg)
+  (interactive "p")
+  (beginning-of-line)
+  (open-line arg)
+  (next-line 1)
+  (when newline-and-indent
+    (indent-according-to-mode)))
+
+(global-set-key (kbd "M-o") 'open-line-above)
+
 (defun pbcopy ()
     (interactive)
       (call-process-region (point) (mark) "pbcopy")
