@@ -20,6 +20,16 @@
 (setq recentf-max-menu-items 40)
 
 
+
+(require 'buffer-move)
+
+(global-set-key (kbd "C-x <C-up>") 'buf-move-up)
+(global-set-key (kbd "C-x <C-down>") 'buf-move-down)
+(global-set-key (kbd "C-x <C-right>") 'buf-move-right)
+(global-set-key (kbd "C-x <C-left>") 'buf-move-left)
+
+
+
 ;; ido-mode allows you to more easily navigate choices. For example,
 ;; when you want to switch buffers, ido presents you with a list
 ;; of buffers in the the mini-buffer. As you start to type a buffer's
