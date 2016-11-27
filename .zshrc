@@ -39,6 +39,6 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 # Added by oh-my-vim
 export PATH=$PATH:~/bin:~/mongo/bin
-
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
