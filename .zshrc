@@ -5,7 +5,11 @@ DISABLE_AUTO_UPDATE="true"
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="muse"
+ZSH_THEME="powerline"
+POWERLINE_HIDE_USER_NAME="true"
+POWERLINE_HIDE_HOST_NAME="true"
+POWERLINE_PATH="short"
+POWERLINE_NO_BLANK_LINE="true"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
