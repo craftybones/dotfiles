@@ -29,6 +29,12 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
+(defvar predicate nil)
+(defvar inherit-input-method nil)
+(defvar ido-cur-item nil)
+(defvar ido-default-item nil)
+(defvar ido-cur-list nil)
+
 ;; The packages you want installed. You can also install these
 ;; manually with M-x package-install
 ;; Add in your own as you wish:
