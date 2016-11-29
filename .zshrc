@@ -8,7 +8,6 @@ DISABLE_AUTO_UPDATE="true"
 ZSH_THEME="powerline"
 POWERLINE_HIDE_HOST_NAME="true"
 POWERLINE_PATH="short"
-POWERLINE_NO_BLANK_LINE="true"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
