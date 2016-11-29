@@ -13,7 +13,7 @@ POWERLINE_PATH="short"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+# alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 alias vim="/usr/local/bin/mvim -v"
 
 # Set to this to use case-sensitive completion
