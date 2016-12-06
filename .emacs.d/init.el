@@ -35,6 +35,12 @@
 (defvar ido-default-item nil)
 (defvar ido-cur-list nil)
 
+;(require 'cider)
+;(setq cider-cljs-lein-repl
+;      "(do (require 'figwheel-sidecar.repl-api)
+;           (figwheel-sidecar.repl-api/start-figwheel!)
+;           (figwheel-sidecar.repl-api/cljs-repl))")
+
 ;; The packages you want installed. You can also install these
 ;; manually with M-x package-install
 ;; Add in your own as you wish:
@@ -47,6 +53,9 @@
     ;; https://github.com/clojure-emacs/clojure-mode
     clojure-mode
 
+    ;; clojurescript-mode
+    clojurescript-mode
+    
     ;; Org mode
     org
     
@@ -81,6 +90,9 @@
 
     ;; Auto completion
     company
+
+    ;; org mode
+    org
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -146,3 +158,20 @@
 (load "setup-clojure.el")
 (load "setup-js.el")
 (load "setup-markdown.el")
+; (load "setup-cljs.el")
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(coffee-tab-width 2)
+ '(package-selected-packages
+   (quote
+    (cider-decompile tagedit smex rainbow-delimiters projectile paredit magit ido-ubiquitous exec-path-from-shell company clojure-mode-extra-font-locking cider))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
