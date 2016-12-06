@@ -1,4 +1,4 @@
-.emacs.d/elpa/archives
+.emacs.d/elpa/
 .emacs.d/backups
 .emacs.d/cider-history
 .emacs.d/ido.last
@@ -7,6 +7,5 @@
 .emacs.d/.recentf*
 .emacs.d/.smex-items
 .emacs.d/auto-save-list
-.emacs.d/elpa/company-20150605.253/
 .emacs.d/projectile.cache
 
