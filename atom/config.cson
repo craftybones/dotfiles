@@ -2,15 +2,9 @@
   core:
     disabledPackages: [
       "nrepl"
-      "ink"
       "rails-model-schema"
-      "wrap-guide"
     ]
     telemetryConsent: "no"
-    themes: [
-      "northem-dark-atom-ui"
-      "northem-dark-atom-syntax"
-    ]
   editor:
     autoIndentOnPaste: false
     fontSize: 18
@@ -23,5 +17,7 @@
     userId: "7caa43af-117e-0ac3-f69a-15215e061064"
   "lisp-paredit": {}
   pigments: {}
+  react:
+    enabledForAllJavascriptFiles: true
   welcome:
     showOnStartup: false

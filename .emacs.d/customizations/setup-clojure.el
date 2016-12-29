@@ -30,7 +30,7 @@
 ;;;;
 
 ;; provides minibuffer documentation for the code you're typing into the repl
-(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
+;; (add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
 
 ;; go right to the REPL buffer when it's finished connecting
 (setq cider-repl-pop-to-buffer-on-connect t)
@@ -73,6 +73,14 @@
 (defun cider-user-ns ()
   (interactive)
   (cider-repl-set-ns "user"))
+
+(defun kill-ring-defun-save ()
+  (interactive)
+  (save-excursion
+    (mark-defun)
+    (copy-region-as-kill (region-beginning) (region-end))))
+
+(define-key clojure-mode-map (kbd "C-c C-f") 'kill-ring-defun-save)
 
 (eval-after-load 'cider
   '(progn
