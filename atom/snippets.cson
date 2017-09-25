@@ -34,3 +34,19 @@
 				${2:// code}
 			});
 			"""
+  'skipIfNotPresent':
+    'prefix': 'skipIfNot'
+    'body': """
+			before(skipIfNotPresent(${1:functionToSkip}));
+			"""
+  'express route':
+    'prefix': 'routerfn'
+    'body': """
+			var ${1:route}=function(req,res,next) {
+\tnext();\n};
+			"""
+  'assert equal':
+    'prefix': 'aeql'
+    'body': """
+    assert.equal(${1:0},${2:someFn()})
+    """

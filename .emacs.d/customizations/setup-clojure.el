@@ -80,7 +80,7 @@
     (mark-defun)
     (copy-region-as-kill (region-beginning) (region-end))))
 
-(define-key clojure-mode-map (kbd "C-c C-f") 'kill-ring-defun-save)
+(define-key clojure-mode-map (kbd "C-c f") 'kill-ring-defun-save)
 
 (eval-after-load 'cider
   '(progn
