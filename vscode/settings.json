@@ -1,0 +1,13 @@
+{
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "window.zoomLevel": 0,
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "all",
+    "workbench.activityBar.visible": true,
+    "editor.tabSize": 2
+}
