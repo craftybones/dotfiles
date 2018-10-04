@@ -24,14 +24,21 @@ set ruler            " show the cursor position all the time
 set showcmd          " display incomplete commands
 set incsearch        " do incremental searching
 set wildmenu         " Add wildcards for completion while loading files
-set modeline         " Set modeline so that you can see some info 
+set modeline         " Set modeline so that you can see some info
 set ls=2             " set two lines for info
+set foldmethod=indent " folding
+set foldnestmax=10   " fold anything with a max nest level of 10
+set nofoldenable     " Don't fold by default when opening a file
+set foldlevel=2      " Set at least 2 levels of fold open
+set foldcolumn=2     " Sets a column to the left which provides information on folds
 
 " NerdTREEToggle
 map <F7> :NERDTreeToggle<CR>
 map <F8> :FufBuffer<CR>
 map <F9> :FufFile<CR>
-map <M> ma
+
+" Copy to system clipboard
+map <C-y> "*y
 
 " Grep stuff
 map <C-G> :vimgrep /<C-R><C-W>/j *<CR>:cope<CR>
@@ -98,3 +105,4 @@ endif " has("autocmd")
 " file it was loaded from, thus the changes you made.
 command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
          \ | wincmd p | diffthis//ap
+
