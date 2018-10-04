@@ -1,6 +1,6 @@
 {
     "workbench.colorTheme": "One Dark Pro Vivid",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 2,
     "editor.fontSize": 16,
     "editor.fontLigatures": true,
     "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
@@ -9,5 +9,9 @@
     "editor.renderControlCharacters": false,
     "editor.renderWhitespace": "all",
     "workbench.activityBar.visible": true,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "markdown.styles": [
+        "github-markdown.css"
+    ],
+    "html.format.indentHandlebars": true
 }
