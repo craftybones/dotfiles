@@ -1,5 +1,15 @@
 "*":
   "atom-runner": {}
+  "autocomplete-plus":
+    fileBlacklist: [
+      ".*"
+      "*.txt"
+      "*.md"
+      "untitled"
+    ]
+    scopeBlacklist: [
+      ".text.plain"
+    ]
   "bracket-matcher":
     autocompleteCharacters: [
       "()"
@@ -15,6 +25,7 @@
     disabledPackages: [
       "nrepl"
       "rails-model-schema"
+      "markdown-preview"
     ]
     telemetryConsent: "no"
   editor:
@@ -27,6 +38,7 @@
     tabType: "soft"
   "exception-reporting":
     userId: "7caa43af-117e-0ac3-f69a-15215e061064"
+  "find-and-replace": {}
   "lisp-paredit":
     indentationForms: [
       "try"

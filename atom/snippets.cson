@@ -50,16 +50,6 @@
     'body': """
     assert.equal(${1:0},${2:someFn()})
     """
-'.source.js':
-  'mocha':
-    'prefix': 'describe'
-    'body': """
-		describe("${1:function under test}",function(){
-			it("${2:behaviour}",function(){
-				${3:// code}
-			});
-		});
-			"""
 '.source.gfm':
   'snippet js':
     'prefix': 'snippetjs'
