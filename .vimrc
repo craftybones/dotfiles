@@ -1,5 +1,3 @@
-execute pathogen#infect()
-
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
@@ -34,8 +32,6 @@ set foldcolumn=2     " Sets a column to the left which provides information on f
 
 " NerdTREEToggle
 map <F7> :NERDTreeToggle<CR>
-map <F8> :FufBuffer<CR>
-map <F9> :FufFile<CR>
 
 " Copy to system clipboard
 map <C-y> "*y
@@ -52,13 +48,11 @@ set shiftwidth=2
 set wrap!
 set number      " show line number
 set nohlsearch  " dont highlight search
-let g:templatePath = "/home/ben/.vim/templates"
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
 " Mapping for Copy/Paste
-"imap  sahi.example.com " breaks ie strg+v strg+m
 " In many terminal emulators the mouse works just fine, thus enable it.
 set mouse=a
 
@@ -68,6 +62,9 @@ if &t_Co > 2 || has("gui_running")
   syntax on
 "  set hlsearch
 endif
+
+" Set the apprentice color scheme
+colorscheme apprentice
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -105,4 +102,3 @@ endif " has("autocmd")
 " file it was loaded from, thus the changes you made.
 command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
          \ | wincmd p | diffthis//ap
-
