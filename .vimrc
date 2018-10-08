@@ -39,6 +39,16 @@ map <C-y> "*y
 " Grep stuff
 map <C-G> :vimgrep /<C-R><C-W>/j *<CR>:cope<CR>
 
+" Duplicate lines upwards and downloads
+inoremap <C-S-Down> <Esc>yypi
+inoremap <C-S-Up> <Esc>yyPi
+
+" Leader
+let mapleader = ","
+
+" Mapping to edit vimrc in a split
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+
 set expandtab
 map DS :%s/\s\+$// <CR>
 
@@ -63,8 +73,13 @@ if &t_Co > 2 || has("gui_running")
 "  set hlsearch
 endif
 
-" Set the apprentice color scheme
-colorscheme apprentice
+" If True Colour present, then use the material theme
+
+if has("termguicolors")
+  set termguicolors
+  set background=dark
+  colorscheme material
+endif
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -102,3 +117,8 @@ endif " has("autocmd")
 " file it was loaded from, thus the changes you made.
 command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
          \ | wincmd p | diffthis//ap
+
+" SnipMate setting
+let g:snipMate = {}
+let g:snipMate.snippet_version = 1
+let g:snipMate.description_in_completion = 1
