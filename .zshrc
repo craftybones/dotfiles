@@ -15,6 +15,7 @@ POWERLINE_PATH="short"
 
 # alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 alias vim="/usr/local/bin/mvim -v"
+alias vimdiff="/usr/local/bin/mvimdiff -v"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"

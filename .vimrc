@@ -49,6 +49,15 @@ let mapleader = ","
 " Mapping to edit vimrc in a split
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
+" Mapping to toggle relative line numbers
+nnoremap <leader><space> :set relativenumber!<cr>
+
+" Mapping esc to jk in insert mode
+" inoremap jk <esc>
+
+" Removing esc
+" inoremap <esc> <nop>
+
 set expandtab
 map DS :%s/\s\+$// <CR>
 
@@ -58,6 +67,8 @@ set shiftwidth=2
 set wrap!
 set number      " show line number
 set nohlsearch  " dont highlight search
+
+set updatetime=100 " update time. git gutter
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
@@ -79,6 +90,7 @@ if has("termguicolors")
   set termguicolors
   set background=dark
   colorscheme material
+  let g:material_theme_style = 'palenight'
 endif
 
 " Only do this part when compiled with support for autocommands.
@@ -116,7 +128,7 @@ endif " has("autocmd")
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
 command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-         \ | wincmd p | diffthis//ap
+         \ | wincmd p | diffthis
 
 " SnipMate setting
 let g:snipMate = {}
