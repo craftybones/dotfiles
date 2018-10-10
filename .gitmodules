@@ -7,9 +7,6 @@
 [submodule "vim/pack/plugins/start/vim-snippets"]
 	path = vim/pack/plugins/start/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
-[submodule "vim/pack/plugins/start/vim-snipmate"]
-	path = vim/pack/plugins/start/vim-snipmate
-	url = https://github.com/garbas/vim-snipmate.git
 [submodule "vim/pack/plugins/start/vim-airline"]
 	path = vim/pack/plugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
@@ -43,3 +40,9 @@
 [submodule "vim/pack/plugins/start/vim-prettier"]
 	path = vim/pack/plugins/start/vim-prettier
 	url = https://github.com/prettier/vim-prettier.git
+[submodule "ultisnips"]
+	path = ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule "vim/pack/plugins/start/ultisnips"]
+	path = vim/pack/plugins/start/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
