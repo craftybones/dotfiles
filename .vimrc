@@ -31,10 +31,10 @@ set foldlevel=2      " Set at least 2 levels of fold open
 set foldcolumn=2     " Sets a column to the left which provides information on folds
 
 " NerdTREEToggle
-map <F7> :NERDTreeToggle<CR>
+noremap <F7> :NERDTreeToggle<CR>
 
 " Copy to system clipboard
-map <C-y> "*y
+vnoremap <C-y> "*y
 
 " Grep stuff
 map <C-G> :vimgrep /<C-R><C-W>/j *<CR>:cope<CR>
@@ -51,6 +51,9 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
 " Mapping to toggle relative line numbers
 nnoremap <leader><space> :set relativenumber!<cr>
+
+" Save file
+nnoremap <leader>w :w<cr>
 
 " Mapping esc to jk in insert mode
 " inoremap jk <esc>
@@ -134,3 +137,12 @@ command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 let g:snipMate = {}
 let g:snipMate.snippet_version = 1
 let g:snipMate.description_in_completion = 1
+
+" Bufferline echo off
+let g:bufferline_echo = 0
+
+" IndentLines configuration
+let g:indentLine_leadingSpaceChar = '·'
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_char = '│'
+
