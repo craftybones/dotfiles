@@ -55,6 +55,13 @@ nnoremap <leader><space> :set relativenumber!<cr>
 " Save file
 nnoremap <leader>w :w<cr>
 
+" Mapping to switch buffers
+nnoremap <leader>n :bnext<cr>
+nnoremap <leader>p :bprev<cr>
+
+" Enable snipmate snippets for UltiSnip
+let g:UltiSnipsEnableSnipMate = 1
+
 " Mapping esc to jk in insert mode
 " inoremap jk <esc>
 
@@ -146,3 +153,5 @@ let g:indentLine_leadingSpaceChar = '·'
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_char = '│'
 
+" UltiSnips setting
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
