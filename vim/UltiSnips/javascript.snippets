@@ -1,6 +1,20 @@
-snippet ct "const function reference"
+snippet cf "const function reference"
 const ${1:some_function} = function(${2:argument}) {
 	${0:${VISUAL:console.log('a function')}}
 	return ${3:0};
 }
+endsnippet
+
+snippet desc "mocha describe block"
+describe('${1:function}',() => {
+	it('${2:expectation}', () => {
+		assert.equal(${3:expected},${4:actual});
+	});
+});
+endsnippet
+
+snippet itshould "mocha it block"
+it('${1:expectation}', () => {
+	assert.equal(${2:expected},${3:actual});
+});
 endsnippet
