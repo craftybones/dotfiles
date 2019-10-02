@@ -56,8 +56,8 @@ nnoremap <leader><space> :set relativenumber!<cr>
 nnoremap <leader>w :w<cr>
 
 " Mapping to switch buffers
-nnoremap <leader>n :bnext<cr>
-nnoremap <leader>p :bprev<cr>
+nnoremap <leader>nb :bnext<cr>
+nnoremap <leader>pb :bprev<cr>
 
 " Enable snipmate snippets for UltiSnip
 let g:UltiSnipsEnableSnipMate = 1
@@ -82,6 +82,9 @@ set updatetime=100 " update time. git gutter
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
+
+" Map keys for maximizing window horizontally
+nnoremap <leader>M <C-w>\|
 
 " Mapping for Copy/Paste
 " In many terminal emulators the mouse works just fine, thus enable it.
