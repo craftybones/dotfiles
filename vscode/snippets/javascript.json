@@ -29,5 +29,19 @@
 			"	${3:// Code}"
 			"});",
 		]
+	},
+	"const function declaration": {
+		"prefix": "cf",
+		"body": [
+			"const ${1:nameOfFunction} = function(${2:params}) {",
+			"	${3:// Code}",
+			"	return ${4:0}",
+			"};"
+		]	
+	},
+	"require": {
+		"prefix": "constr",
+		"body": ["const ${1:lib} = require('${1:lib}');"],
+		"description": "description"
 	}
 }

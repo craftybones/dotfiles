@@ -1,17 +1,37 @@
 {
-    "workbench.colorTheme": "One Dark Pro Vivid",
-    "window.zoomLevel": 2,
-    "editor.fontSize": 16,
-    "editor.fontLigatures": true,
-    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
-    "editor.minimap.enabled": false,
-    "breadcrumbs.enabled": true,
-    "editor.renderControlCharacters": false,
-    "editor.renderWhitespace": "all",
-    "workbench.activityBar.visible": true,
-    "editor.tabSize": 2,
-    "markdown.styles": [
-        "github-markdown.css"
-    ],
-    "html.format.indentHandlebars": true
+  "window.zoomLevel": 2,
+  "editor.fontSize": 16,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "editor.renderControlCharacters": false,
+  "editor.renderWhitespace": "all",
+  "workbench.activityBar.visible": true,
+  "editor.tabSize": 2,
+  "markdown.styles": [],
+  "html.format.indentHandlebars": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.showFoldingControls": "always",
+  "prettier.singleQuote": true,
+  "editor.formatOnSave": true,
+  "go.formatTool": "goimports",
+  "workbench.statusBar.visible": true,
+  "workbench.colorTheme": "Nord",
+  "go.useCodeSnippetsOnFunctionSuggest": true,
+  "go.lintTool": "golangci-lint",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.parameterHints.enabled": false,
+  "editor.suggest.maxVisibleSuggestions": 12,
+  "editor.quickSuggestionsDelay": 500,
+  "workbench.sideBar.location": "right",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
