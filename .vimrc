@@ -30,8 +30,11 @@ set nofoldenable     " Don't fold by default when opening a file
 set foldlevel=2      " Set at least 2 levels of fold open
 set foldcolumn=2     " Sets a column to the left which provides information on folds
 
+" Leader
+let mapleader = ","
+
 " NerdTREEToggle
-noremap <F7> :NERDTreeToggle<CR>
+noremap <leader>nt :NERDTreeToggle<CR>
 
 " Copy to system clipboard
 vnoremap <C-y> "*y
@@ -43,8 +46,6 @@ map <C-G> :vimgrep /<C-R><C-W>/j *<CR>:cope<CR>
 inoremap <C-S-Down> <Esc>yypi
 inoremap <C-S-Up> <Esc>yyPi
 
-" Leader
-let mapleader = ","
 
 " Mapping to edit vimrc in a split
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
@@ -102,8 +103,8 @@ endif
 if has("termguicolors")
   set termguicolors
   set background=dark
-  colorscheme material
-  let g:material_theme_style = 'palenight'
+  colorscheme PaperColor
+  let g:airline_theme='papercolor'
 endif
 
 " Only do this part when compiled with support for autocommands.
