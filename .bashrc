@@ -39,3 +39,6 @@ export LSCOLORS=Gxfxcxdxbxegedabagacad
   else
     export TERM='xterm-color'
   fi
+
+  alias l="ls -l"
+

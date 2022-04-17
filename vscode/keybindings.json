@@ -3,4 +3,5 @@
   "key": "cmd+n",
   "command": "extension.advancedNewFile",
   "when": ""
-}]
+},
+{"key": "ctrl+o",                "command": "workbench.action.files.openFile" }]

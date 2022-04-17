@@ -1,4 +1,4 @@
-# Defined in - @ line 1
-function glo --description 'alias glo=git log'
-	git log $argv;
+# Defined in - @ line 2
+function glo --description 'alias glo=git log --oneline'
+	git log --oneline $argv
 end
